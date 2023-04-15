@@ -12,7 +12,6 @@ import WhoAmI from './components/WhoAmI.jsx'
 import InfoContainer from './components/InfoContainer.jsx'
 import Footer from './components/Footer'
 
-
 const App = () => {
   const [userNfts] = useGlobalState('nfts')
   const mintCapReached = getGlobalState('mintCap')
@@ -27,11 +26,6 @@ const App = () => {
     console.log('mintCapReached ', mintCapReached)
     
   }, [mintCapReached])
-
-
-
-
-
 
   return (
     <div className="min-h-screen">

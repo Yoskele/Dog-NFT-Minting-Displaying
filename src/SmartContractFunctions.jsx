@@ -5,9 +5,6 @@ import { ethers, BigNumber } from 'ethers'
 const contractAddress = '0xd1fb5e5f1f100d1820ae8c96d6643f7aaff8a9c3';
 const opensea_uri = `https://testnets.opensea.io/assets/goerli/${contractAddress}/`
 
-
-
-
 // Check to mint
 let loggedIn = false;
 
@@ -30,7 +27,6 @@ const connectWallet = async () => {
         console.log('error ', error)
     }
 }
-
 
 const getNFTBalance = async () =>{
   const providerx = new ethers.providers.Web3Provider(ethereum)
@@ -55,7 +51,6 @@ const getNFTContract = () => {
     // return getGlobalState('contract')
   }
 }
-
 // let mintAmount = 1;
 const mintNFT = async () => {
   const mintValue = getGlobalState('mintValue')
@@ -139,7 +134,6 @@ const getUserNFT = async () => {
   }
 
 }
-
 export{
     connectWallet,
     mintNFT,
